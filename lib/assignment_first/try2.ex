@@ -1,4 +1,3 @@
-#import Glue.Conn
 import AssignmentFirst
 defmodule Assignment.Try2.Router do
   import Plug.Conn
@@ -33,6 +32,8 @@ defmodule Assignment.Try2.Router do
  		id = Map.fetch!(conn.params, "delete_data")
     if length(len()) >4 do
       delete_task(id)
+    else
+      update_task(id,"Add a task to start")
     end
     body=EEx.eval_file "lib/assignment_first/later.eex",[a: 400,c: display_task(),b: display_id(),d: display_status()]
     send_resp(conn, 200, body)
