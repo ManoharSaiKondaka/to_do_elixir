@@ -13,9 +13,11 @@ after
 ![image](https://user-images.githubusercontent.com/111751471/207795025-8bfd6f60-c8ee-41ae-ae6a-7810ef7eebd5.png)
                                               EDIT TASK
 before
-![image](https://user-images.githubusercontent.com/111751471/207795235-39cb6204-a6d2-4453-8fa8-58fbfbf26fb0.png)
+![image](https://user-images.githubusercontent.com/111751471/207798208-9fffdb2d-1c9a-41c4-8c76-f44e6505d6f7.png)
+
 after
-![image](https://user-images.githubusercontent.com/111751471/207795450-0691d971-73c8-4667-af19-825cecda2e40.png)
+![image](https://user-images.githubusercontent.com/111751471/207798462-d84e20be-9254-441c-ac24-b91dbe892a48.png)
+
                                               CHANGE STATUS
 before
 ![image](https://user-images.githubusercontent.com/111751471/207795890-bd14d185-a395-47a1-a179-49c39832f088.png)
