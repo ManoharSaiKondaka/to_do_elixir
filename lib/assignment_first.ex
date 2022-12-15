@@ -31,10 +31,10 @@ defmodule AssignmentFirst do
   end
   def default() do
       First.Repo.insert_all(First.Task,[
-        %{task: " ",status: " " },
-        %{task: " ",status: " " },
-        %{task: " ",status: " "},
-        %{task: " ",status: " "}
+        %{task: "Add a task to start",status: " " },
+        %{task: "Add a task to start ",status: " " },
+        %{task: "Add a task to start",status: " "},
+        %{task: "Add a task to start",status: " "}
       ])
   end
 
