@@ -31,11 +31,13 @@ after clicking delete button
                                               EDIT TASK
                                              
 before
-![image](https://user-images.githubusercontent.com/111751471/207795890-bd14d185-a395-47a1-a179-49c39832f088.png)
+
+![image](https://user-images.githubusercontent.com/111751471/207814757-9deb03aa-398f-4f79-9d36-31edf71bab03.png)
 ![image](https://user-images.githubusercontent.com/111751471/207802449-6b075ba6-ab71-48be-806d-f8128de5e5a4.png)
 
 
 after 
+![image](https://user-images.githubusercontent.com/111751471/207814543-211a4cc4-2b24-4dc0-8273-d1c350c507d8.png)
 
 ![image](https://user-images.githubusercontent.com/111751471/207795738-22440602-62d3-4da1-9cfb-20c094c36eb9.png)
 
