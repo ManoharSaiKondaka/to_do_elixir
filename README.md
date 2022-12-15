@@ -14,13 +14,13 @@ CSS
 
 ![image](https://user-images.githubusercontent.com/111751471/207793680-47bbe43d-005a-4fc2-976d-f5ddcda71b22.png)
                                                
-                                               ADD TASK
+       ADD TASK
 before
 ![image](https://user-images.githubusercontent.com/111751471/207794315-323b99fe-e235-4a12-b617-7865716a6203.png)
 after
 ![image](https://user-images.githubusercontent.com/111751471/207794631-252046dc-b8b5-4727-bb7a-807a0bacc365.png)
                                              
-                                             DELETE TASK 
+       DELETE TASK 
 before
 
 ![image](https://user-images.githubusercontent.com/111751471/207794757-b650df7a-e51f-4664-b33a-c5a625b2dc8b.png)
@@ -31,20 +31,23 @@ after clicking delete button
                                               EDIT TASK
                                              
 before
-![image](https://user-images.githubusercontent.com/111751471/207798208-9fffdb2d-1c9a-41c4-8c76-f44e6505d6f7.png)
+![image](https://user-images.githubusercontent.com/111751471/207795890-bd14d185-a395-47a1-a179-49c39832f088.png)
 ![image](https://user-images.githubusercontent.com/111751471/207802449-6b075ba6-ab71-48be-806d-f8128de5e5a4.png)
 
 
 after 
-![image](https://user-images.githubusercontent.com/111751471/207798462-d84e20be-9254-441c-ac24-b91dbe892a48.png)
+
+![image](https://user-images.githubusercontent.com/111751471/207795738-22440602-62d3-4da1-9cfb-20c094c36eb9.png)
 
                                               CHANGE STATUS
 before:
 
-![image](https://user-images.githubusercontent.com/111751471/207795890-bd14d185-a395-47a1-a179-49c39832f088.png)
+![image](https://user-images.githubusercontent.com/111751471/207798208-9fffdb2d-1c9a-41c4-8c76-f44e6505d6f7.png)
+
 after clicking change status button
 
-![image](https://user-images.githubusercontent.com/111751471/207795738-22440602-62d3-4da1-9cfb-20c094c36eb9.png)
+![image](https://user-images.githubusercontent.com/111751471/207798462-d84e20be-9254-441c-ac24-b91dbe892a48.png)
+
                                              
                                              DATA BASE
 ![image](https://user-images.githubusercontent.com/111751471/207797609-4f56b3f1-8020-446e-bc43-158999d521df.png)
