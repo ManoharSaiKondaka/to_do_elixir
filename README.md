@@ -29,8 +29,11 @@ after clicking delete button
 ![image](https://user-images.githubusercontent.com/111751471/207795025-8bfd6f60-c8ee-41ae-ae6a-7810ef7eebd5.png)
                                               
                                               EDIT TASK
+                                             
 before
 ![image](https://user-images.githubusercontent.com/111751471/207798208-9fffdb2d-1c9a-41c4-8c76-f44e6505d6f7.png)
+![image](https://user-images.githubusercontent.com/111751471/207802449-6b075ba6-ab71-48be-806d-f8128de5e5a4.png)
+
 
 after 
 ![image](https://user-images.githubusercontent.com/111751471/207798462-d84e20be-9254-441c-ac24-b91dbe892a48.png)
