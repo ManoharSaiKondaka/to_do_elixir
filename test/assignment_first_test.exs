@@ -11,8 +11,4 @@ defmodule AssignmentFirstTest do
   test "check adding" do
     assert 1+4==5
   end
-  # test "view" do
-  #   query=from(to_do in First.Task )
-  #   IO.inspect First.Repo.all(query)
-  # end
 end
