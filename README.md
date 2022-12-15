@@ -41,7 +41,6 @@ before
 after 
 ![image](https://user-images.githubusercontent.com/111751471/207814543-211a4cc4-2b24-4dc0-8273-d1c350c507d8.png)
 
-![image](https://user-images.githubusercontent.com/111751471/207795738-22440602-62d3-4da1-9cfb-20c094c36eb9.png)
 
          CHANGE STATUS
 before:
