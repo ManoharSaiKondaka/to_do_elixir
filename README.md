@@ -28,7 +28,7 @@ after clicking delete button
 
 ![image](https://user-images.githubusercontent.com/111751471/207795025-8bfd6f60-c8ee-41ae-ae6a-7810ef7eebd5.png)
                                               
-                                              EDIT TASK
+        EDIT TASK
                                              
 before
 
@@ -41,7 +41,7 @@ after
 
 ![image](https://user-images.githubusercontent.com/111751471/207795738-22440602-62d3-4da1-9cfb-20c094c36eb9.png)
 
-                                              CHANGE STATUS
+         CHANGE STATUS
 before:
 
 ![image](https://user-images.githubusercontent.com/111751471/207798208-9fffdb2d-1c9a-41c4-8c76-f44e6505d6f7.png)
@@ -51,7 +51,7 @@ after clicking change status button
 ![image](https://user-images.githubusercontent.com/111751471/207798462-d84e20be-9254-441c-ac24-b91dbe892a48.png)
 
                                              
-                                             DATA BASE
+            DATA BASE
 ![image](https://user-images.githubusercontent.com/111751471/207797609-4f56b3f1-8020-446e-bc43-158999d521df.png)
 
 
