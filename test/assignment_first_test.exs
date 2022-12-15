@@ -11,4 +11,8 @@ defmodule AssignmentFirstTest do
   test "check adding" do
     assert 1+4==5
   end
+  test "adding..." do
+    {:ok , todo_struct} = AssignmentFirst.add("hello world")
+    assert  todo_struct.task == "hello world"
+  end
 end
