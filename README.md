@@ -17,7 +17,6 @@ SETUP:
 4. start the application: $mix run--no-halt
 5. Start the localhost:8001 on browser
 6. For unit testing uncomment the last line in config.exs and use command :$ -mix test
-7. 
 #FEATURES
 1.Add Task
 2.Add priority(optional.,default set to medium)
@@ -38,6 +37,6 @@ These are some example screenshots.
 
                                              
             DATA BASE
-![image](https://user-images.githubusercontent.com/111751471/207797609-4f56b3f1-8020-446e-bc43-158999d521df.png)
+![image](https://user-images.githubusercontent.com/111751471/210238429-21be86fc-2b15-4150-adf8-990d49312995.png)
 
 
