@@ -6,4 +6,4 @@ config :assignment_first,First.Repo,
   username: "postgres",
   password: "idfy",
   hostname: "localhost"
-#import_config "#{config_env()}.exs"
+#import_config "#{config_env()}.exs" #uncomment this line when testing
