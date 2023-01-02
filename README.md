@@ -18,38 +18,14 @@ P.S. Latest entries always displyed top in the table.
                                                
        ADD TASK
 before
-![image](https://user-images.githubusercontent.com/111751471/207794315-323b99fe-e235-4a12-b617-7865716a6203.png)
+![image](https://user-images.githubusercontent.com/111751471/210235880-e0ab71bf-4116-41c8-8e95-25dc12dfe63c.png)
+
+
 after
-![image](https://user-images.githubusercontent.com/111751471/207794631-252046dc-b8b5-4727-bb7a-807a0bacc365.png)
-                                             
-       DELETE TASK 
-before
+![image](https://user-images.githubusercontent.com/111751471/210236392-59d86cd6-160a-464e-bf71-0b789194c9fb.png)
 
-![image](https://user-images.githubusercontent.com/111751471/207794757-b650df7a-e51f-4664-b33a-c5a625b2dc8b.png)
-after clicking delete button
+![image](https://user-images.githubusercontent.com/111751471/210236522-0462bf91-4d79-42a9-aad2-8b9993e8b8e0.png)
 
-![image](https://user-images.githubusercontent.com/111751471/207795025-8bfd6f60-c8ee-41ae-ae6a-7810ef7eebd5.png)
-                                              
-        EDIT TASK
-                                             
-before
-
-![image](https://user-images.githubusercontent.com/111751471/207814757-9deb03aa-398f-4f79-9d36-31edf71bab03.png)
-![image](https://user-images.githubusercontent.com/111751471/207802449-6b075ba6-ab71-48be-806d-f8128de5e5a4.png)
-
-
-after 
-![image](https://user-images.githubusercontent.com/111751471/207814543-211a4cc4-2b24-4dc0-8273-d1c350c507d8.png)
-
-
-         CHANGE STATUS
-before:
-
-![image](https://user-images.githubusercontent.com/111751471/207798208-9fffdb2d-1c9a-41c4-8c76-f44e6505d6f7.png)
-
-after clicking change status button
-
-![image](https://user-images.githubusercontent.com/111751471/207798462-d84e20be-9254-441c-ac24-b91dbe892a48.png)
 
                                              
             DATA BASE
