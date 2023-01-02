@@ -8,12 +8,11 @@ defmodule AssignmentFirst.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: AssignmentFirst.Worker.start_link(arg)
-      # {AssignmentFirst.Worker, arg}
       First.Repo,
-      {Plug.Cowboy, scheme: :http, plug: Assignment.Try2.Router, options: [port: 4000]},
-      #{Plug.Cowboy, scheme: :http, plug: Try.Router, options: [port: 8000]},
-      #{Plug.Cowboy, scheme: :http, plug: Try.Router, options: [port: 8001]},
+      # {Plug.Cowboy, scheme: :http, plug: Assignment.Try2.Router, options: [port: 4000]},
+      # {Plug.Cowboy, scheme: :http, plug: Try.Router, options: [port: 8000]},
+      {Plug.Cowboy, scheme: :http, plug: Dynamic.Router, options: [port: 8001]},
+      {Plug.Cowboy, scheme: :http, plug: Dynamic2.Router, options: [port: 8002]}
       #{Plug.Cowboy, scheme: :http, plug: Assign.First.Plug, options: [port: 4005]}
 
     ]

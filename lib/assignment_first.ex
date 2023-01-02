@@ -18,9 +18,9 @@ defmodule AssignmentFirst do
   def hello do
     :world
   end
-  def add(task) do
-    add_task = %First.Task{task: task,status: "incomplete"}
-  First.Repo.insert(add_task)
+  def add(task,priority\\"medium") do
+    add_task = %First.Task{task: task,status: "incomplete",priority: priority}
+    First.Repo.insert(add_task)
   end
 
   def len() do
@@ -29,81 +29,64 @@ defmodule AssignmentFirst do
     data=First.Repo.all(query)
     #IO.inspect(data)
   end
-  def default() do
-      First.Repo.insert_all(First.Task,[
-        %{task: "Add a task to start",status: " " },
-        %{task: "Add a task to start ",status: " " },
-        %{task: "Add a task to start",status: " "},
-        %{task: "Add a task to start",status: " "}
-      ])
+  def display() do
+    query = from task in First.Task ,
+          order_by: [asc: :id],
+          select: task
+    data=First.Repo.all(query)
+
   end
 
-  def display_task() do
-    if length(len())==0 do
-      default()
-    end
-    query = from task in First.Task ,
-          order_by: [asc: :id],
-          select: task
-    data=First.Repo.all(query)
-    tasks = data|> Enum.map(&(&1.task))
-    reverse_tasks=Enum.take(tasks, -4) #|> IO.inspect(charlists: :as_lists)
-    #IO.inspect(reverse_tasks)
-  end
-  def display_id() do
-    if length(len())==0 do
-      default()
-    end
-    query = from task in First.Task ,
-          order_by: [asc: :id],
-          select: task
-    data=First.Repo.all(query)
-    ids = data|> Enum.map(&(&1.id))
-    reverse_ids=Enum.take(ids, -4) #|> IO.inspect(charlists: :as_lists)
-    #IO.inspect(reverse_ids)
-  end
-  def display_status() do
-    if length(len())==0 do
-      default()
-    end
-    query = from task in First.Task ,
-          order_by: [asc: :id],
-          select: task
-    data=First.Repo.all(query)
-    statuses= data|> Enum.map(&(&1.status))
-    reverse_statuses=Enum.take(statuses, -4) #|> IO.inspect(charlists: :as_lists)
-    #IO.inspect(reverse_statuses)
-  end
+  # def display_task() do
+  #   query = from task in First.Task ,
+  #         order_by: [asc: :id],
+  #         select: task
+  #   data=First.Repo.all(query)
+  # end
+  # def display_id() do
+  #   query = from task in First.Task ,
+  #         order_by: [asc: :id],
+  #         select: task
+  #   data=First.Repo.all(query)
+  # end
+  # def display_status() do
+  #   query = from task in First.Task ,
+  #         order_by: [asc: :id],
+  #         select: task
+  #   data=First.Repo.all(query)
+  # end
   def changeset(task , params \\ %{}) do
     task
-    |> Ecto.Changeset.cast(params , [:task,:status])
-    |> Ecto.Changeset.validate_required([:task , :status])
+    |> Ecto.Changeset.cast(params , [:task,:status,:priority])
+    |> Ecto.Changeset.validate_required([:task , :status,:priority])
   end
 
-  def update_task(id,task) do
+  def update_task(id,task,priority) do
 
     old_task=First.Task |> First.Repo.get(id)
     old_task
-    |> changeset(%{task: task})
+    |> changeset(%{task: task,priority: priority})
     |> First.Repo.update()
-
   end
 
   def delete_task(id) do
     old_task=First.Task |> First.Repo.get(id)
     |> First.Repo.delete()
-
+  end
+  def clearAll do
+    First.Repo.delete_all(First.Task)
   end
 
   def toggle_status(id,status) do
     old_task=First.Task |> First.Repo.get(id)
+    IO.inspect(old_task)
     if status=="complete" do
         old_task
-        |> changeset(%{status: "incomplete"})
+        |> changeset(%{status: "complete"})
         |> First.Repo.update()
     else
         old_task
-        |> changeset(%{status: "complete"})
+        |> changeset(%{status: "incomplete"})
         |> First.Repo.update()
     end
   end
