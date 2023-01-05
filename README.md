@@ -10,49 +10,33 @@ Postgresql
 HTML 5
 CSS
 
+SETUP:
+1.install the dependencies : $ mix deps.get
+2. Create the database: $ mix ecto.create
+3. Migrate the database: $ mix ecto.migrate
+4. start the application: $mix run--no-halt
+5. Start the localhost:8001 on browser
+6. For unit testing uncomment the last line in config.exs and use command :$ -mix test
 #FEATURES
-
-P.S. Latest entries always displyed top in the table.
-
-![image](https://user-images.githubusercontent.com/111751471/207793680-47bbe43d-005a-4fc2-976d-f5ddcda71b22.png)
-                                               
-       ADD TASK
-before
-![image](https://user-images.githubusercontent.com/111751471/207794315-323b99fe-e235-4a12-b617-7865716a6203.png)
-after
-![image](https://user-images.githubusercontent.com/111751471/207794631-252046dc-b8b5-4727-bb7a-807a0bacc365.png)
-                                             
-       DELETE TASK 
-before
-
-![image](https://user-images.githubusercontent.com/111751471/207794757-b650df7a-e51f-4664-b33a-c5a625b2dc8b.png)
-after clicking delete button
-
-![image](https://user-images.githubusercontent.com/111751471/207795025-8bfd6f60-c8ee-41ae-ae6a-7810ef7eebd5.png)
-                                              
-        EDIT TASK
-                                             
-before
-
-![image](https://user-images.githubusercontent.com/111751471/207814757-9deb03aa-398f-4f79-9d36-31edf71bab03.png)
-![image](https://user-images.githubusercontent.com/111751471/207802449-6b075ba6-ab71-48be-806d-f8128de5e5a4.png)
+1.Add Task
+2.Add priority(optional.,default set to medium)
+3.Delete task
+4.Edit task and priority
+5.Change staus to complete/incomplete
 
 
-after 
-![image](https://user-images.githubusercontent.com/111751471/207814543-211a4cc4-2b24-4dc0-8273-d1c350c507d8.png)
 
+These are some example screenshots.
 
-         CHANGE STATUS
-before:
+![image](https://user-images.githubusercontent.com/111751471/210235880-e0ab71bf-4116-41c8-8e95-25dc12dfe63c.png)
 
-![image](https://user-images.githubusercontent.com/111751471/207798208-9fffdb2d-1c9a-41c4-8c76-f44e6505d6f7.png)
+![image](https://user-images.githubusercontent.com/111751471/210236392-59d86cd6-160a-464e-bf71-0b789194c9fb.png)
 
-after clicking change status button
+![image](https://user-images.githubusercontent.com/111751471/210236522-0462bf91-4d79-42a9-aad2-8b9993e8b8e0.png)
 
-![image](https://user-images.githubusercontent.com/111751471/207798462-d84e20be-9254-441c-ac24-b91dbe892a48.png)
 
                                              
             DATA BASE
-![image](https://user-images.githubusercontent.com/111751471/207797609-4f56b3f1-8020-446e-bc43-158999d521df.png)
+![image](https://user-images.githubusercontent.com/111751471/210238429-21be86fc-2b15-4150-adf8-990d49312995.png)
 
 

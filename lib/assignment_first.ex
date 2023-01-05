@@ -22,18 +22,25 @@ defmodule AssignmentFirst do
     First.Repo.insert(add_task)
   end
 
+<<<<<<< HEAD
   # def len() do
   #   query = from task in First.Task ,
   #         select: task
   #   data=First.Repo.all(query)
   #   #IO.inspect(data)
   # end
+=======
+>>>>>>> 994e131565a416a79fd4d8fa86e7bc2ddbc9365e
   def display() do
     query = from task in First.Task ,
           order_by: [asc: :id],
           select: task
+<<<<<<< HEAD
     First.Repo.all(query)
 
+=======
+    _data=First.Repo.all(query)
+>>>>>>> 994e131565a416a79fd4d8fa86e7bc2ddbc9365e
 
   end
 
@@ -70,7 +77,11 @@ defmodule AssignmentFirst do
   end
 
   def delete_task(id) do
+<<<<<<< HEAD
     First.Task |> First.Repo.get(id)
+=======
+    _old_task=First.Task |> First.Repo.get(id)
+>>>>>>> 994e131565a416a79fd4d8fa86e7bc2ddbc9365e
     |> First.Repo.delete()
   end
   def clearAll do
