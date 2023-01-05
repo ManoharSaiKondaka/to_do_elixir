@@ -50,7 +50,7 @@ defmodule Dynamic.Router do
     send_resp(conn, 200, body)
   end
   get "/clear_all" do
-    clearAll()
+    clearAll
     body=EEx.eval_file "lib/assignment_first/dynamic.leex",[display: display()]
     send_resp(conn, 200, body)
   end

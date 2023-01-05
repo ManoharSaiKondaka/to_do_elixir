@@ -9,9 +9,9 @@ defmodule AssignmentFirst.Application do
   def start(_type, _args) do
     children = [
       First.Repo,
-      
-      {Plug.Cowboy, scheme: :http, plug: Dynamic.Router, options: [port: 8001]}
-      
+
+      {Plug.Cowboy, scheme: :http, plug: Dynamic.Router, options: [port: 8001]},
+      {Plug.Cowboy, scheme: :http, plug: Dynamic.Router2, options: [port: 8000]}
 
     ]
     Logger.info("running the web servers..")

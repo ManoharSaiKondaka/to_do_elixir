@@ -1,5 +1,6 @@
 import First.Task
 import Ecto.Query
+import Ecto.Changeset
 defmodule AssignmentFirst do
   @moduledoc """
   Documentation for `AssignmentFirst`.
@@ -22,25 +23,17 @@ defmodule AssignmentFirst do
     First.Repo.insert(add_task)
   end
 
-<<<<<<< HEAD
-  # def len() do
-  #   query = from task in First.Task ,
-  #         select: task
-  #   data=First.Repo.all(query)
-  #   #IO.inspect(data)
-  # end
-=======
->>>>>>> 994e131565a416a79fd4d8fa86e7bc2ddbc9365e
+  def len() do
+    query = from task in First.Task ,
+          select: task
+    data=First.Repo.all(query)
+    #IO.inspect(data)
+  end
   def display() do
     query = from task in First.Task ,
           order_by: [asc: :id],
           select: task
-<<<<<<< HEAD
-    First.Repo.all(query)
-
-=======
-    _data=First.Repo.all(query)
->>>>>>> 994e131565a416a79fd4d8fa86e7bc2ddbc9365e
+    data=First.Repo.all(query)
 
   end
 
@@ -77,11 +70,7 @@ defmodule AssignmentFirst do
   end
 
   def delete_task(id) do
-<<<<<<< HEAD
-    First.Task |> First.Repo.get(id)
-=======
-    _old_task=First.Task |> First.Repo.get(id)
->>>>>>> 994e131565a416a79fd4d8fa86e7bc2ddbc9365e
+    old_task=First.Task |> First.Repo.get(id)
     |> First.Repo.delete()
   end
   def clearAll do
@@ -98,6 +87,19 @@ defmodule AssignmentFirst do
     else
         old_task
         |> changeset(%{status: "incomplete"})
+        |> First.Repo.update()
+    end
+  end
+  def toggling_status(id,status) do
+    old_task=First.Task |> First.Repo.get(id)
+    IO.inspect(old_task)
+    if status=="complete" do
+        old_task
+        |> changeset(%{status: "incomplete"})
+        |> First.Repo.update()
+    else
+        old_task
+        |> changeset(%{status: "complete"})
         |> First.Repo.update()
     end
   end

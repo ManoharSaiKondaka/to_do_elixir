@@ -132,7 +132,20 @@ label[for="my-checkbox"] {
   text-decoration: none;
   outline: none;
 }
-
+.but {
+  border: 3px solid black;
+  padding: 10px;
+  border-color: black;
+  background-color:white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-right:420px;
+  margin-bottom:-200px;
+}
 
 </style>
 </head>
@@ -149,7 +162,8 @@ label[for="my-checkbox"] {
     <button id="addbutton" type="submit" formaction="/add" >Add Task</button>
     <button id="addbutton" type="submit" formaction="/more" >Add more details</button>
   </form>
-  
+  <br>
+  <br>
   <ul class="todolist" style="list-style-type: none; ">
   <%= for n <- display do %>
   <li>
@@ -159,22 +173,26 @@ label[for="my-checkbox"] {
   <%=if n.priority=="low" do %>
   <h4 style="color:green;" ><%=n.priority %>-priority</h4>
   <%end %>
-  <%= if n.status=="complete" do%>
-    <a href="checked" style="text-decoration: none; outline:none;">
-    <label>
-    <input type="checkbox"checked  class="task-checkbox"  id="mycheckbox" name="status" value="incomplete" onclick="location.href='checked?id=<%=n.id%>&status='+this.value">
-    <span class="task-text" style="font-size:20px;"><%= n.task%></span>
-    </label>
-    </a>
-  <% else %>
-    <a href="checked" style="text-decoration: none; outline:none;">
-    <label>
-    <input type="checkbox"  class="task-checkbox" name="status" value="complete" onclick="location.href='checked?id=<%=n.id%>&status='+this.value">
-    <span class="task-text" style="font-size:20px;"><%=n.task%></span>
-    </label>
-    </a>
-  <% end %>
-  
+   <form action="checked">
+    <input type="hidden" id="data" name="status" value="<%=n.status%>"> 
+    <input type="hidden" id="data" name="id" value="<%=n.id%>">
+    <%= if n.status == "incomplete" do %>
+    <button class="but" style="background-color: none; color:red; border-radius: 10%; margin-bottom:-100px;"></button>
+    <% else %>
+    <button class="but" style=" background-color: #04AA6D; color:green;border-radius: 10%;" ></button>
+    
+    <% end %>
+    </form>
+    <%= if n.status == "complete" do %> 
+    <h2 style="text-decoration: line-through;opacity: 0.3;"><%= n.task %></h2>
+    <%else %>
+    <h2><%= n.task %></h2>
+    <%end %>
+
+    
+        
+    
+
   
   <form action="edittt" class="form" method="get" > 
     <input type="hidden" id="data" name="data" value="<%=n.task%>"> 
