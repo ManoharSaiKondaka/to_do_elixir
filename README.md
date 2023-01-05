@@ -11,11 +11,12 @@ HTML 5
 CSS
 
 SETUP:
-1.install the dependencies : $ mix deps.get
-2. Create the database: $ mix ecto.create
-3. Migrate the database: $ mix ecto.migrate
-4. start the application: $mix run--no-halt
-5. Start the localhost:8000 on browser
+1.Chnage the username and password of your postgres database in config/config.exs and config/test.exs
+2.install the dependencies : $ mix deps.get
+3. Create the database: $ mix ecto.create
+4. Migrate the database: $ mix ecto.migrate
+5. start the application: $mix run--no-halt
+6. Start the localhost:8000 on browser
            (or)
 6.  Start the localhost:8001 on browser
 7. For unit testing uncomment the last line in config.exs and use command :$ -mix test
