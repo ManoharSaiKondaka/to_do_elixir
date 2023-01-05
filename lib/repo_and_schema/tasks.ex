@@ -1,4 +1,3 @@
-import First.Repo
 defmodule First.Task do
   use Ecto.Schema
 

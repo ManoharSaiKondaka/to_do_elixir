@@ -14,7 +14,7 @@ defmodule AssignmentFirst.MixProject do
   end
   defp aliases do
     [
-     "test": ["ecto.create --quiet", "ecto.migrate", "test"]
+     test: ["ecto.create --quiet", "ecto.migrate", "test"]
     ]
   end
   defp elixirc_paths(:test), do: ["lib", "test/support"]

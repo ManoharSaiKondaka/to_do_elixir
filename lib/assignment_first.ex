@@ -1,6 +1,5 @@
 import First.Task
 import Ecto.Query
-import Ecto.Changeset
 defmodule AssignmentFirst do
   @moduledoc """
   Documentation for `AssignmentFirst`.
@@ -23,17 +22,18 @@ defmodule AssignmentFirst do
     First.Repo.insert(add_task)
   end
 
-  def len() do
-    query = from task in First.Task ,
-          select: task
-    data=First.Repo.all(query)
-    #IO.inspect(data)
-  end
+  # def len() do
+  #   query = from task in First.Task ,
+  #         select: task
+  #   data=First.Repo.all(query)
+  #   #IO.inspect(data)
+  # end
   def display() do
     query = from task in First.Task ,
           order_by: [asc: :id],
           select: task
-    data=First.Repo.all(query)
+    First.Repo.all(query)
+
 
   end
 
@@ -70,7 +70,7 @@ defmodule AssignmentFirst do
   end
 
   def delete_task(id) do
-    old_task=First.Task |> First.Repo.get(id)
+    First.Task |> First.Repo.get(id)
     |> First.Repo.delete()
   end
   def clearAll do
