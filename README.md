@@ -15,8 +15,10 @@ SETUP:
 2. Create the database: $ mix ecto.create
 3. Migrate the database: $ mix ecto.migrate
 4. start the application: $mix run--no-halt
-5. Start the localhost:8001 on browser
-6. For unit testing uncomment the last line in config.exs and use command :$ -mix test
+5. Start the localhost:8000 on browser
+           (or)
+6.  Start the localhost:8001 on browser
+7. For unit testing uncomment the last line in config.exs and use command :$ -mix test
 #FEATURES
 1.Add Task
 2.Add priority(optional.,default set to medium)
